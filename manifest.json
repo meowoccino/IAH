@@ -1,0 +1,16 @@
+{
+  "name": "Internet at Home",
+  "short_name": "Internet",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#006874",
+  "theme_color": "#006874",
+  "icons": [
+    {
+      "src": "internet_monitor_icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
