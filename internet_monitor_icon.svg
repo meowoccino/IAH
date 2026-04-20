@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background with MD3 teal -->
+  <rect width="512" height="512" rx="112" fill="#006874"/>
+
+  <!-- Subtle inner glow ring -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#00858F" stroke-width="2" opacity="0.4"/>
+
+  <!-- WiFi arc 1 (outermost) -->
+  <path d="M256 170
+    A120 120 0 0 1 376 290"
+    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.35"/>
+  <path d="M256 170
+    A120 120 0 0 0 136 290"
+    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- WiFi arc 2 (middle) -->
+  <path d="M256 210
+    A80 80 0 0 1 336 290"
+    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.6"/>
+  <path d="M256 210
+    A80 80 0 0 0 176 290"
+    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- WiFi arc 3 (inner) -->
+  <path d="M256 252
+    A40 40 0 0 1 296 292"
+    fill="none" stroke="white" stroke-width="28" stroke-linecap="round"/>
+  <path d="M256 252
+    A40 40 0 0 0 216 292"
+    fill="none" stroke="white" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Center dot -->
+  <circle cx="256" cy="330" r="28" fill="white"/>
+
+  <!-- Green "alive" pulse badge -->
+  <circle cx="370" cy="152" r="58" fill="#006874"/>
+  <circle cx="370" cy="152" r="50" fill="#B7F0B8"/>
+  <circle cx="370" cy="152" r="30" fill="#006E1C"/>
+  <!-- Checkmark inside badge -->
+  <polyline points="354,152 366,164 390,138" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
