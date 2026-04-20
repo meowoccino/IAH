@@ -1,41 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Background with MD3 teal -->
-  <rect width="512" height="512" rx="112" fill="#006874"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="320.000000pt" height="320.000000pt" viewBox="0 0 320.000000 320.000000"
+ preserveAspectRatio="xMidYMid meet">
 
-  <!-- Subtle inner glow ring -->
-  <circle cx="256" cy="256" r="200" fill="none" stroke="#00858F" stroke-width="2" opacity="0.4"/>
-
-  <!-- WiFi arc 1 (outermost) -->
-  <path d="M256 170
-    A120 120 0 0 1 376 290"
-    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.35"/>
-  <path d="M256 170
-    A120 120 0 0 0 136 290"
-    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.35"/>
-
-  <!-- WiFi arc 2 (middle) -->
-  <path d="M256 210
-    A80 80 0 0 1 336 290"
-    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.6"/>
-  <path d="M256 210
-    A80 80 0 0 0 176 290"
-    fill="none" stroke="white" stroke-width="28" stroke-linecap="round" opacity="0.6"/>
-
-  <!-- WiFi arc 3 (inner) -->
-  <path d="M256 252
-    A40 40 0 0 1 296 292"
-    fill="none" stroke="white" stroke-width="28" stroke-linecap="round"/>
-  <path d="M256 252
-    A40 40 0 0 0 216 292"
-    fill="none" stroke="white" stroke-width="28" stroke-linecap="round"/>
-
-  <!-- Center dot -->
-  <circle cx="256" cy="330" r="28" fill="white"/>
-
-  <!-- Green "alive" pulse badge -->
-  <circle cx="370" cy="152" r="58" fill="#006874"/>
-  <circle cx="370" cy="152" r="50" fill="#B7F0B8"/>
-  <circle cx="370" cy="152" r="30" fill="#006E1C"/>
-  <!-- Checkmark inside badge -->
-  <polyline points="354,152 366,164 390,138" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(0.000000,320.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M0 1600 l0 -1600 1600 0 1600 0 0 1600 0 1600 -1600 0 -1600 0 0
+-1600z m1623 429 l2 -734 493 -3 492 -2 0 -60 0 -60 -489 0 -490 0 -6 -52 c-3
+-29 -5 -209 -3 -401 l3 -347 -62 0 -63 0 0 400 0 400 -576 0 c-352 0 -574 4
+-572 9 2 5 263 335 580 733 318 398 601 753 630 790 29 37 54 66 55 64 2 -2 4
+-333 6 -737z m662 726 c110 -33 217 -135 250 -242 25 -80 17 -182 -22 -264
+-32 -69 -49 -91 -313 -404 -96 -114 -185 -221 -198 -236 l-23 -29 315 0 316 0
+0 -60 0 -60 -440 0 c-417 0 -440 1 -431 18 6 9 45 58 88 108 43 50 119 140
+170 200 50 60 148 176 217 258 70 82 140 170 156 195 31 46 60 127 60 167 0
+43 -34 125 -68 164 -41 49 -69 64 -144 80 -151 31 -299 -66 -323 -212 l-7 -38
+-60 0 -61 0 7 47 c19 143 146 277 294 312 60 14 160 12 217 -4z"/>
+<path d="M1050 1864 c-245 -306 -446 -561 -448 -565 -2 -5 199 -9 447 -9 l451
+0 0 565 c0 311 -1 565 -3 565 -1 0 -203 -250 -447 -556z"/>
+</g>
 </svg>

@@ -84,10 +84,10 @@ input:checked+.slider:before{transform:translateX(20px);}
     <label class="switch"><input type="checkbox" id="tog" checked onchange="toggleAuto()"><span class="slider"></span></label>
   </div>
   <div class="chips">
-    <button class="chip" onclick="setIv(5,this)">5s</button>
-    <button class="chip on" onclick="setIv(10,this)">10s</button>
-    <button class="chip" onclick="setIv(30,this)">30s</button>
+    <button class="chip on" onclick="setIv(30,this)">30s</button>
     <button class="chip" onclick="setIv(60,this)">1m</button>
+    <button class="chip" onclick="setIv(300,this)">5m</button>
+    <button class="chip" onclick="setIv(600,this)">10m</button>
   </div>
 </div>
 
@@ -101,7 +101,7 @@ input:checked+.slider:before{transform:translateX(20px);}
 </button>
 
 <script>
-var IP='87.197.171.183', hist=[], tot=0, ups=0, ivMs=10000, tmr=null, busy=false;
+var IP='87.197.171.183', hist=[], tot=0, ups=0, ivMs=30000, tmr=null, busy=false;
 function fmt(d){return d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});}
 async function ping(){
   var t=performance.now(), ctrl=new AbortController(), to=setTimeout(function(){ctrl.abort();},5000);
