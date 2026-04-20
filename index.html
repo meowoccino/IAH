@@ -142,15 +142,29 @@ async function chk(){
   var r=await ping(); render(r);
   busy=false; fab.disabled=false; document.getElementById('fi').textContent='↻';
 }
-function toggleAuto(){clearInterval(tmr);if(document.getElementById('tog').checked)tmr=setInterval(chk,ivMs);}
+function savePrefs(){localStorage.setItem('iv',ivMs);localStorage.setItem('auto',document.getElementById('tog').checked?'1':'0');}
+function toggleAuto(){clearInterval(tmr);if(document.getElementById('tog').checked)tmr=setInterval(chk,ivMs);savePrefs();}
 function setIv(s,el){
   ivMs=s*1000;
   document.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on');});
   el.classList.add('on');
   clearInterval(tmr);
   if(document.getElementById('tog').checked)tmr=setInterval(chk,ivMs);
+  savePrefs();
 }
-chk(); tmr=setInterval(chk,ivMs);
+(function(){
+  var savedIv=parseInt(localStorage.getItem('iv'))||30000;
+  var savedAuto=localStorage.getItem('auto')!=='0';
+  ivMs=savedIv;
+  document.getElementById('tog').checked=savedAuto;
+  document.querySelectorAll('.chip').forEach(function(c){
+    c.classList.remove('on');
+    var s=parseInt(c.getAttribute('onclick').match(/setIv\((\d+)/)[1]);
+    if(s*1000===savedIv)c.classList.add('on');
+  });
+  chk();
+  if(savedAuto)tmr=setInterval(chk,ivMs);
+})();
 </script>
 </body>
 </html>
